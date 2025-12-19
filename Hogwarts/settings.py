@@ -71,6 +71,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Hogwarts.wsgi.application'
 
+LOGIN_REDIRECT_URL = 'accounts:profile'
+LOGIN_URL = 'accounts:login'
 
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
