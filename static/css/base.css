@@ -1,0 +1,8 @@
+body {
+    margin: 0; /* Remove default margin */
+    height: 100vh; /* Ensure body takes full viewport height */
+    background-image: url("/static/img/backgrounds/train.png");
+    background-size: cover; /* Scale image to cover entire screen */
+    background-repeat: no-repeat; /* Prevent repeating */
+    background-position: center; /* Center the image */
+}
