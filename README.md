@@ -1,6 +1,8 @@
 # Hogwarts
 A project my uncle made up for his english class!
 
+**Start**: 19-12-2025
+
 ## Project modules
 
 Using django several apps where made:
