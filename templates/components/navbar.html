@@ -4,7 +4,19 @@
             <li><a href="{% url 'home' %}" class="nav-link">Home</a></li>
             <li><a class="nav-link">Quests</a></li>
             <li><a class="nav-link">Leaderbord</a></li>
+            {% if is_logged_in %}
             <li><a href="{% url 'accounts:profile' %}" class="nav-link">Profile</a></li>
+                {% if user.is_staff %}
+                <li><a href="/admin/" class="nav-link">Admin</a></li>
+                {% endif %}
+<!--            <form action="{% url 'accounts:logout' %}" method="post">-->
+<!--                {% csrf_token %}-->
+<!--                <button type="submit" class="logout-link">Logout</button>-->
+<!--            </form>-->
+            <li><a href="{% url 'accounts:logout' %}" class="nav-link">Logout</a></li>
+            {% else %}
+            <li><a href="{% url 'accounts:login' %}" class="nav-link">Login</a></li>
+            {% endif %}
         </ul>
     </div>
 </nav>
