@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+        Hogwarts
+        {% endblock title %}
+    </title>
+</head>
+<body>
+{% include 'components/navbar.html' %}
+
+<div class="container">
+    {% block content %}
+    {% endblock content %}
+</div>
+</body>
+</html>
